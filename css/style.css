@@ -7,6 +7,12 @@
     display: none;
   }
   
+
+.image1, .Title_Curs ,.about{
+    margin-left: 20px;
+}
+
+
   label {
     display: block;
     margin-top: 10px;
