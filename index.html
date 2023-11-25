@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
 
-<!--     <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style.css">
 
 
     <title>Моя первая страница</title>
@@ -30,7 +30,7 @@
     let buy = document.getElementById("buy")
     let order = document.getElementById("order")
 
-    but.addEventListener("click",()=>{
+    buy.addEventListener("click",()=>{
         document.getElementById("main").style.display="none";
         document.getElementById("form").style.display="block";
         document.getElementById("user_name").value=tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name ;
