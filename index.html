@@ -21,13 +21,13 @@
     <input type="text" id="name" name="name" required>
 
     <label for="surname">Фамилия:</label>
-    <input type="text" id="surname" name="surname" required>
+    <input class="Text_form" type="text" id="surname" name="surname" required>
 
     <label for="email">Почта:</label>
-    <input type="email" id="email" name="email" required>
+    <input class="Text_form" type="email" id="email" name="email" required>
 
     <label for="phone">Номер телефона:</label>
-    <input type="tel" id="phone" name="phone" required>
+    <input  class="Text_form" type="tel" id="phone" name="phone" required>
 
     <button id="order" >Оформить</button>
   </form>
@@ -48,6 +48,23 @@
     });
 
     order.addEventListener("click",()=>{
+
+        let name = document.getElementById("name").value;
+        let surname = document.getElementById("surname").value;
+        let email = document.getElementById("email").value;
+        let phone = document.getElementById("phone").value;
+
+        let data ={
+          name:name,
+          surname: surname,
+          email: email,
+          phone: phone
+        }
+
+
+        tg.sendData(JSON.stringify(data))
+
+
         tg.close();
     });
 </script>
