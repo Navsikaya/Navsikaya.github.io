@@ -18,7 +18,10 @@
     margin-top: 10px;
   }
 
-  .p .strong{
+  p{
+    color: var(--tg-theme-text-color);
+  }
+ strong{
     color: var(--tg-theme-text-color);
   }
   
